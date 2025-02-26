@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimbledon Station Departures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wimbledon Station</h1>
+            <div class="current-time" id="current-time"></div>
+        </header>
+
+        <div class="departure-board">
+            <div class="board-header">
+                <div class="time">Time</div>
+                <div class="destination">Destination</div>
+                <div class="platform">Platform</div>
+                <div class="status">Status</div>
+            </div>
+            <div id="departures" class="departures"></div>
+        </div>
+
+        <div class="status-message" id="status-message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
